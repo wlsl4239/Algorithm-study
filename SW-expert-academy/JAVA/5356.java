@@ -3,7 +3,7 @@ package array2;
 import java.io.FileInputStream;
 import java.util.Scanner;
 
-public class Solution5356_의석이의세로로말해요_서울9반_김경수2 {
+public class 5356 {
 	public static void main(String args[]) throws Exception	{
 		System.setIn(new FileInputStream("res/input5356.txt"));
 
