@@ -3,7 +3,7 @@ package array2;
 import java.io.FileInputStream;
 import java.util.Scanner;
 
-public class Solution2817_부분수열의합_서울9반_김경수 {
+public class Solution {
 	public static void main(String args[]) throws Exception	{
 		System.setIn(new FileInputStream("res/input2817.txt"));
 
