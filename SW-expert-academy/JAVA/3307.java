@@ -3,7 +3,7 @@ package array1;
 import java.io.FileInputStream;
 import java.util.Scanner;
 
-public class Solution3307_최장증가부분수열_서울9반_김경수 {
+public class Solution {
 
 	public static void main(String args[]) throws Exception
 	{
