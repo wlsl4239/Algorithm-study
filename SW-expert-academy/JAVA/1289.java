@@ -3,18 +3,15 @@ package array1;
 import java.util.Scanner;
 import java.io.FileInputStream;
 
-class Solution1289_원재의메모리복구하기_서울9반_김경수
-{
-	public static void main(String args[]) throws Exception
-	{
+class Solution {
+	public static void main(String args[]) throws Exception	{
 		System.setIn(new FileInputStream("res/Solution1289_input.txt"));
 
 		Scanner sc = new Scanner(System.in);
 		int T;
 		T=sc.nextInt();
 
-		for(int test_case = 1; test_case <= T; test_case++)
-		{
+		for(int test_case = 1; test_case <= T; test_case++) {
 			String s = sc.next();
 			StringBuffer sb = new StringBuffer(s);
 			int ans = 0;
