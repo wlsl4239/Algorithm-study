@@ -3,7 +3,7 @@ package array1;
 import java.util.Scanner;
 import java.io.FileInputStream;
 
-class Solution1204_최빈수구하기_서울9반_김경수 {
+class Solution {
 	public static void main(String args[]) throws Exception	{
 		System.setIn(new FileInputStream("res/Solution1204_input.txt"));
 
