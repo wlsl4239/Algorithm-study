@@ -3,7 +3,7 @@ package array1;
 import java.util.Scanner;
 import java.io.FileInputStream;
 
-class Solution {
+public class Solution {
 	public static void main(String args[]) throws Exception	{
 		System.setIn(new FileInputStream("res/Solution1289_input.txt"));
 
