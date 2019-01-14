@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.io.FileInputStream;
 
-class Solution1208_Flatten_서울9반_김경수 {
+class Solution {
 	
 	public static void main(String args[]) throws Exception	{
 		System.setIn(new FileInputStream("res/Solution1208_input.txt"));
