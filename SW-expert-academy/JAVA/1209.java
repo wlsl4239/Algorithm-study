@@ -28,7 +28,7 @@ public class Solution1209_Sum_서울9반_김경수 {
 			
 			sum = 0;
 			for(int i=0;i<100;i++) 
-				sum += arr[99-i][i];
+				sum += arr[i][i];
 			ans = (ans>sum)?ans:sum;
 			
 			for(int i=0;i<100;i++) {
