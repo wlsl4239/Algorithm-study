@@ -3,7 +3,7 @@
 import java.io.FileInputStream;
 import java.util.Scanner;
 
-public class Solution1209_Sum_서울9반_김경수 {
+public class Solution {
 	public static void main(String args[]) throws Exception	{
 		System.setIn(new FileInputStream("res/input1209.txt"));
 
