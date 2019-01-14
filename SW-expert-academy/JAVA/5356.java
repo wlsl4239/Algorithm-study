@@ -13,7 +13,7 @@ public class Solution5356_의석이의세로로말해요_서울9반_김경수2 {
 
 		for(int test_case = 1; test_case <= T; test_case++)
 		{
-			StringBuffer ans = new StringBuffer("");
+			StringBuilder ans = new StringBuilder("");
 			String arr[] = new String[5];
 			int len = 0;
 			
