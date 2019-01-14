@@ -3,7 +3,7 @@ package array1;
 import java.io.FileInputStream;
 import java.util.Scanner;
 
-public class Solution5215_햄버거다이어트_서울9반_김경수 {
+public class Solution {
 
 	static int n,l;
 
