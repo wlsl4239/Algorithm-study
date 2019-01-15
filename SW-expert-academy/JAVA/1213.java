@@ -12,12 +12,15 @@ public class Solution {
 			String query = sc.next();
 			String text = sc.next();
 			
+			System.out.println("#" + test_case + " " + (text.split(query,-1).length-1));
+			/*
 			int ans = 0;
 			for(int i=0;i<=text.length() - query.length();i++) 
 				if(text.substring(i,i+query.length()).equals(query))
 					ans++;
 			
 			System.out.println("#"+test_case+" " + ans);
+			*/
 		}
 	}
 }
