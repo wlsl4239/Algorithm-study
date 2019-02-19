@@ -81,8 +81,7 @@ public class Solution {
 	}
 	
 	
-	public static void main(String[] args) throws FileNotFoundException {
-			System.setIn(new FileInputStream("res/input1251.txt"));
+	public static void main(String[] args){
 			Scanner sc = new Scanner(System.in);
 	
 			long t=sc.nextInt();
