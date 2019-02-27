@@ -1,7 +1,16 @@
+/**
+ * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWNcJ2sapZMDFAV8&categoryId=AWNcJ2sapZMDFAV8&categoryType=CODE
+ * 
+ * 출발, 도착 지점을 a, b라고 했을 때 1에서 출발하나 2에서 출발하나 복도 시작점은 같기 때문에 a, b가 홀수인지 짝수인지는 중요하지 않다. 
+ * 그래서 출발, 도착 지점을 입력받고 짝수로 변환시켜준 뒤 
+ * corridor 배열에 출발점/2 ~ 도착점/2 까지 +1을 해준 후 최종적으로 배열 내 최댓값을 출력하면 된다.
+ * */
+
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Solution {
+public class Solution4408_자기방으로돌아가기_서울9반_김경수 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
@@ -34,3 +43,19 @@ public class Solution {
 		}
 	}
 }
+
+/*
+3    
+4    
+10 20  
+30 40
+50 60
+70 80
+2
+1 3
+2 200
+3
+10 100
+20 80
+30 50
+*/
