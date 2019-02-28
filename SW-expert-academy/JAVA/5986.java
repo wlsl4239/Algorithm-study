@@ -9,14 +9,15 @@
  * */
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
-
-public class Solution {
+public class Solution5986_새샘이와세소수_서울9반_김경수 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		int [] sumof3prime = new int [3000];
 		boolean [] notPrime = new boolean [1000];
 		ArrayList<Integer> prime = new ArrayList<>();
@@ -39,7 +40,9 @@ public class Solution {
 		int t = Integer.parseInt(br.readLine().trim());
 		for(int test=1;test<=t;test++) {
 			int n = Integer.parseInt(br.readLine().trim());
-			System.out.println("#"+test+" "+sumof3prime[n]);
+			bw.write("#"+test+" "+sumof3prime[n]+"\n");
+			bw.flush();
+//			System.out.println("#"+test+" "+sumof3prime[n]);
 		}
 	}
 }
