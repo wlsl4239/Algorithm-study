@@ -1,7 +1,17 @@
+/**
+ * 5이상의 홀수는 3개의 소수의 합으로 나타낼 수 있다.
+ * 5이상의 홀수가 주어졌을 때, 소수의 합으로 나타낼 수 있는 경우의 수를 출력하라.
+ * 
+ * 에라토스테네스의체를 이용해서 소수를 구한 뒤 
+ * 3중 for문을 이용해 각 숫자들에 대해 경우의수를 증가시켜간다.
+ * 그 후 입력받은 n에 대해 sumof3prime[n]을 출력한다.
+ * 
+ * */
+
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+
 
 public class Solution {
 	public static void main(String[] args) throws Exception {
