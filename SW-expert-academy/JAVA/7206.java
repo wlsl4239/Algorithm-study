@@ -13,10 +13,7 @@ public class Solution {
 		if(num<10) {
 			ans = Math.max(turn, ans);
 			return;
-		}
-		int g = 1;
-		while(g<num) g*=10;
-		
+		}		
 		int k = 10;
 		while(true) {
 			if(k>num) break;
