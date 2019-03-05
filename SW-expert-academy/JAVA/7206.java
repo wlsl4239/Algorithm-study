@@ -1,6 +1,6 @@
 /**
   숫자를 xxxyy -> xxx,yy 이런식으로 2분할만 하면 될 줄 알았는데 아니였나보다.
-  숫자 n의 범위가 1~99999이기 때문에 자를수 있는 분할은 최대 5분할까지.
+  숫자 n의 범위가 1~99999이기 때문에 자를수 있는 분할은 최대 4분할까지.
   테스트케이스에선 3분할까지만 하면 되는 듯 하다.
 */
 import java.io.BufferedReader;
@@ -28,14 +28,6 @@ public class Solution {
 					if(kkk>cc) break;
 					int ccc = cc/kkk;
 					int ddd = cc%kkk;
-					int kkkk = 10;
-					while(true) {
-						if(kkkk>ddd) break;
-						int dddd = ddd/kkkk;
-						int eeee = ddd%kkkk;
-						kkkk*=10;
-						dfs(a*bb*ccc*dddd*eeee,turn+1);		//5분할
-					}
 					kkk*=10;
 					dfs(a*bb*ccc*ddd,turn+1);			//4분할
 				}
