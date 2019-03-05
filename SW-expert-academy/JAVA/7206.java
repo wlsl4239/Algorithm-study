@@ -18,24 +18,38 @@ public class Solution {
 			if(k>num) break;
 			int a = num/k;
 			int b = num%k;
+			
 			int kk = 10;
 			while(true) {
 				if(kk>b) break;
 				int bb = b/kk;
 				int cc = b%kk;
+				
 				int kkk=10;
 				while(true) {
 					if(kkk>cc) break;
 					int ccc = cc/kkk;
 					int ddd = cc%kkk;
+					
+					int kkkk = 10;
+					while(true) {
+						if(kkkk>ddd) break;
+						int dddd = ddd/kkkk;
+						int eeee = ddd%kkkk;
+						kkkk*=10;
+						dfs(a*bb*ccc*dddd*eeee,turn+1);			//5분할		
+					}
+					
 					kkk*=10;
-					dfs(a*bb*ccc*ddd,turn+1);			//4분할
+					dfs(a*bb*ccc*ddd,turn+1);				//4분할
 				}
+				
 				kk*=10;
-				dfs(a*bb*cc,turn+1);					//3분할
+				dfs(a*bb*cc,turn+1);						//3분할
 			}			
+			
 			k*=10;
-			dfs(a*b,turn+1);						//2분할
+			dfs(a*b,turn+1);							//2분할
 		}
 	}
 	
