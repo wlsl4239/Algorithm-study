@@ -25,9 +25,7 @@ public class Solution {
 				s = br.readLine().split(" ");
 				for(int j=0;j<n;j++) {
 					map[i][j] = Integer.parseInt(s[j]);
-					if(map[i][j] == 0) continue;
-
-					if(color[i] == color[j]){
+					if(map[i][j] == 1 && color[i] == color[j]){
 						color[j] *= 10;
 						ans++;
 					}
