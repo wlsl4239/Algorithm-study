@@ -3,7 +3,7 @@ package array2;
 import java.io.FileInputStream;
 import java.util.Scanner;
 
-public class Solution1210_Ladder1_서울9반_김경수 {
+public class Solution {
 	public static int ans;
 	public static int [][] arr;
 	public static boolean [][] visited;
