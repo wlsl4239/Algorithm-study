@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Solution6782_현주가좋아하는제곱근놀이_서울9반_김경수 {
+public class Solution {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
