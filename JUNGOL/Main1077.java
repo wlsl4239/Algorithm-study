@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -6,27 +5,22 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
 		int W = sc.nextInt();
-		
-		int[] w = new int[N+1];
-		int[] v = new int[N+1];
-		int[][] sack = new int[N+1][W+1];
+
+		int [][] item = new int [N+1][2];
+		int [][] dp = new int[N+1][W+1];
 		
 		for(int i=1;i<=N;i++) {
-			w[i] = sc.nextInt();
-			v[i] = sc.nextInt();
+			item[i][0] = sc.nextInt();
+			item[i][1] = sc.nextInt();
 		}
 		
 		for(int i=1;i<=N;i++) {
 			for(int j=1;j<=W;j++) {
-				
-				if(w[i] > j)
-					sack[i][j] = sack[i-1][j];
-				else
-					sack[i][j] = Math.max(sack[i][j-w[i]]+v[i], sack[i-1][j]);
-				
+				if(j<item[i][0]) dp[i][j] = dp[i-1][j];
+				else dp[i][j] = Math.max(dp[i][j-item[i][0]] + item[i][1], dp[i-1][j]);
 			}
 		}
-		System.out.println(sack[N][W]);
+		System.out.println(dp[N][W]);
 		
 	}
 }
