@@ -3,6 +3,11 @@
 #include <algorithm>
 using namespace std;
 
+/*
+ (ai-1) / bi 로 정렬한 배치가 정답 배치이다.
+ */
+
+
 struct rail {
     long long a;
     long long b;
@@ -10,8 +15,8 @@ struct rail {
 
 vector<rail> arr;
 
-bool cmp(rail a, rail b){
-    if (b.b*(a.a - 1) > a.b*(b.a - 1))
+bool cmp(rail i, rail j){
+    if (j.b*(i.a - 1) >= i.b*(j.a - 1))
         return true;
     return false;
 }
