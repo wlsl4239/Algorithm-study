@@ -22,14 +22,10 @@ void merge(int left, int right) {
 
 	}
 
-	if (l > mid) {		//좌측이 먼저 끝났을 때
-		while (k <= right)
-			arr2[k++] = arr[r++];
-	}
-	else {				//우측이 먼저 끝났을때
-		while (k <= right)
-			arr2[k++] = arr[l++];
-	}
+	while (r <= right) arr2[k++] = arr[r++];
+	
+	while (l <= mid) arr2[k++] = arr[l++];
+	
 	for (int i = left; i <= right; i++)
 		arr[i] = arr2[i];
 
